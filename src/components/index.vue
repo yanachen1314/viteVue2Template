@@ -12,10 +12,15 @@ import { useCounterStore } from '../stores/counter'
 export default {
     name: 'index',
     data() {
+        const counter = useCounterStore();
         return {
-
+            counter
         }
     },
+    /*     setup() {
+            const counter = useCounterStore();
+            return { counter };
+        }, */
 }
 </script>
 <style lang="less"></style>

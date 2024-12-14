@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import { mapState } from 'pinia';
 
 export const useCounterStore = defineStore('counter', {
     state: () => ({
