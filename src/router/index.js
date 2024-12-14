@@ -1,19 +1,25 @@
 import Vue from 'vue'
-import VueRouter from 'router'
-import App from '../App.vue'
+import VueRouter from 'vue-router'
+import index from '../components/index.vue'
+import hello from '../components/HelloWorld.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: "/index",
-    name: "app",
-    component: App
+    name: "index",
+    component: index
+  },
+  {
+    path: "/hello",
+    name: "hello",
+    component: hello
   },
   {
     path: "/",
-    name: "app",
-    component: App
+    name: "index",
+    component: index
   }
 ]
 

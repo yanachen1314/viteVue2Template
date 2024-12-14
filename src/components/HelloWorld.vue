@@ -2,9 +2,7 @@
 import axios from "axios";
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
-  },
+
   data() {
     return {
       hello: ""
@@ -30,7 +28,15 @@ export default {
 
 <template>
   <div>
-    <h1>{{ msg }}</h1>
+    <a href="https://vite.dev" target="_blank">
+      <img src="../../public/vite.svg" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="../assets/vue.svg" class="logo vue" alt="Vue logo" />
+    </a>
+    <h3>Vite5.4.11 + Vue2.7.16</h3>
+
+
     <el-button plain @click="open1">
       可自动关闭
     </el-button>
@@ -43,4 +49,19 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
+}
+</style>
