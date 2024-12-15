@@ -29,17 +29,17 @@ export default {
 <template>
   <div>
     <a href="https://vite.dev" target="_blank">
-      <img src="../../public/vite.svg" class="logo" alt="Vite logo" />
+      <img src="@/assets/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
-      <img src="../assets/vue.svg" class="logo vue" alt="Vue logo" />
+      <img src="@/assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
     <h3>Vite5.4.11 + Vue2.7.16</h3>
-
 
     <el-button plain @click="open1">
       可自动关闭
     </el-button>
+
     <el-button plain @click="getHello">
       请求
     </el-button>
