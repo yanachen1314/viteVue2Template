@@ -8,7 +8,7 @@
     </div>
 </template>
 <script>
-import { useCounterStore } from '../stores/counter'
+import { useCounterStore } from '@/stores/counter'
 export default {
     name: 'index',
     data() {

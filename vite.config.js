@@ -25,9 +25,8 @@ export default defineConfig({
         'vue', // 自动导入 Vue API，如 ref、reactive 等
         'vue-router', // 自动导入 Vue Router API
       ],
-      // 不生成类型声明文件
+      // 不生成类型声明文件，'src/auto-imports.d.js'
       dts: false,
-      //dts: 'src/auto-imports.d.js',
     }),
   ],
   define: {

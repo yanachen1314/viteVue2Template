@@ -1,12 +1,14 @@
 import Vue from 'vue';
 // import './style.css';
 import App from './App.vue';
-// 已配置自动导入 import ElementUI from 'element-ui';
+// 已配置自动导入 
+import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import router from './router';
 import { createPinia, PiniaVuePlugin } from 'pinia';
 import axios from 'axios';
 
+Vue.use(ElementUI);
 Vue.use(PiniaVuePlugin);
 const pinia = createPinia();
 
